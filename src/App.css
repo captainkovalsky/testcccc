@@ -1,6 +1,40 @@
 .App {
   text-align: center;
 }
+.container {
+  padding: 25px;
+  background: gray;
+  display: flex;
+  overflow: hidden;
+
+  max-width: 500px;
+  overflow-x: scroll;
+}
+
+.container:before, .container:after {
+  content: '******';
+  visibility: hidden;
+}
+.album {
+  display: inline;
+  padding: 0 15px;
+}
+
+.image {
+  object-fit: contain;
+  max-width: 100px;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.scroll-container > div {
+  align-content: center;
+}
 
 .App-logo {
   height: 40vmin;
